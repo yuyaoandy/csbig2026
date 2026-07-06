@@ -1,0 +1,607 @@
+{
+  "enemy": [
+      {
+          "id": 0,
+          "name": "树",
+          "health": 100,
+          "energy": 999,
+          "code": ["Ssleep0"],
+          "relic": []
+      },
+      {
+          "id": 1,
+          "name": "牢大",
+          "health": 80,
+          "energy": 24,
+          "code": [
+              "Losangles",
+              "Ssleep0",
+              "Sdefend5",
+              "Aelbow0",
+              "CgotoLosangles"
+          ],
+          "relic": [9, 10]
+      },
+      {
+          "id": 2,
+          "name": "苍蝇",
+          "health": 5,
+          "energy": 999,
+          "code": ["La", "Svine0", "CgotoLa"],
+          "relic": [99]
+      },
+      {
+          "id": 3,
+          "name": "蚊子",
+          "health": 5,
+          "energy": 999,
+          "code": ["LA", "Aattack0", "CgotoLA"],
+          "relic": [98]
+      },
+      {
+          "id": 4,
+          "name": "火焰元素",
+          "health": 80,
+          "energy": 4,
+          "code": ["Lstart", "Aflame0", "Sdefend1", "CgotoLstart"],
+          "relic": [9]
+      },
+      {
+          "id": 5,
+          "name": "暗影刺客",
+          "health": 40,
+          "energy": 5,
+          "code": ["Lattack", "Swine0", "Aattack3", "Spoison1", "CgotoLattack"],
+          "relic": [99]
+      },
+      {
+          "id": 6,
+          "name": "治疗师",
+          "health": 60,
+          "energy": 3,
+          "code": ["Lheal", "Sdefend1", "Sheal1", "CgotoLheal"],
+          "relic": [10]
+      },
+      {
+          "id": 7,
+          "name": "冰霜巨人",
+          "health": 100,
+          "energy": 3,
+          "code": ["Lstart", "Aattack2", "Sice1", "Sdefend1", "CgotoLstart"],
+          "relic": [10]
+      },
+      {
+          "id": 8,
+          "name": "暗影牧师",
+          "health": 50,
+          "energy": 4,
+          "code": ["Lheal", "Sheal1", "Spoison1", "Sdefend1", "CgotoLheal"],
+          "relic": []
+      },
+      {
+          "id": 9,
+          "name": "狂战士",
+          "health": 60,
+          "energy": 4,
+          "code": ["Lrage", "Swarmup2", "Aattack3", "CgotoLrage"],
+          "relic": [99]
+      },
+      {
+          "id": 10,
+          "name": "史莱姆",
+          "health": 20,
+          "energy": 2,
+          "code": ["Lstart", "Aattack0", "CgotoLstart"],
+          "relic": []
+      },
+      {
+          "id": 11,
+          "name": "小蝙蝠",
+          "health": 15,
+          "energy": 3,
+          "code": ["Lstart", "Aattack0", "Aattack0", "CgotoLstart"],
+          "relic": []
+      },
+      {
+          "id": 12,
+          "name": "蘑菇",
+          "health": 25,
+          "energy": 2,
+          "code": ["Lstart", "Sdefend0", "Aattack0", "CgotoLstart"],
+          "relic": []
+      },
+      {
+          "id": 13,
+          "name": "哥布林",
+          "health": 30,
+          "energy": 3,
+          "code": ["Lstart", "Aattack1", "Sdefend0", "CgotoLstart"],
+          "relic": []
+      },
+      {
+          "id": 14,
+          "name": "大史莱姆",
+          "health": 40,
+          "energy": 2,
+          "code": ["Lstart", "Aattack0", "Sdefend0", "CgotoLstart"],
+          "relic": []
+      },
+      {
+          "id": 15,
+          "name": "小史莱姆",
+          "health": 20,
+          "energy": 2,
+          "code": ["Lstart", "Aattack0", "CgotoLstart"],
+          "relic": []
+      },
+      {
+        "id": 16,
+        "name": "自爆虫",
+        "health": 8,
+        "energy": 2,
+        "code": ["Lstart", "Aattack0", "Aattack0", "CgotoLstart"],
+        "relic": []
+      },
+      {
+        "id": 17,
+        "name": "诅咒巫师",
+        "health": 45,
+        "energy": 4,
+        "code": ["Lcurse", "Sdefend1", "Spoison2", "Aattack0", "CgotoLcurse"],
+        "relic": [9]
+      },
+      {
+        "id": 18,
+        "name": "剑圣",
+        "health": 55,
+        "energy": 4,
+        "code": ["Lsword", "Swine0", "Aheavy2", "Sdefend2", "CgotoLsword"],
+        "relic": [99]
+      },
+      {
+        "id": 19,
+        "name": "冰霜元素",
+        "health": 70,
+        "energy": 3,
+        "code": ["Lice", "Aattack1", "Sice1", "Sdefend1", "CgotoLice"],
+        "relic": [10]
+      },
+      {
+        "id": 20,
+        "name": "盗贼",
+        "health": 35,
+        "energy": 4,
+        "code": ["Lsteal", "Ssteal1", "Aattack2", "Sdefend0", "CgotoLsteal"],
+        "relic": []
+      },
+      {
+        "id": 21,
+        "name": "神圣守卫",
+        "health": 90,
+        "energy": 3,
+        "code": ["Lguard", "Sshield1", "Sheal0", "Sdefend2", "CgotoLguard"],
+        "relic": [9, 10]
+      }
+  ],
+  "encounter": [
+      {
+          "id": 1,
+          "name": "讨厌的蚊子",
+          "enemies": [0, 3],
+          "minDifficulty": 11,
+          "isBoss": false
+      },
+      {
+          "id": 2,
+          "name": "苍蝇蚊子",
+          "enemies": [2, 2, 3, 3],
+          "minDifficulty": 12,
+          "isBoss": false
+      },
+      {
+          "id": 3,
+          "name": "牢大+蚊子",
+          "enemies": [1, 3],
+          "minDifficulty": 35,
+          "isBoss": false
+      },
+      {
+          "id": 4,
+          "name": "暗影三人组",
+          "enemies": [5, 3, 3],
+          "minDifficulty": 45,
+          "isBoss": false
+      },
+      {
+          "id": 5,
+          "name": "史莱姆首领",
+          "enemies": [14],
+          "minDifficulty": 13,
+          "isBoss": false
+      },
+      {
+          "id": 6,
+          "name": "Boss - 火焰领主",
+          "enemies": [4],
+          "minDifficulty": 80,
+          "isBoss": true
+      },
+      {
+        "id": 7,
+        "name": "虫群",
+        "enemies": [16, 16, 16],
+        "minDifficulty": 12,
+        "isBoss": false
+      },
+      {
+        "id": 8,
+        "name": "诅咒巫师+蚊群",
+        "enemies": [17, 3, 3],
+        "minDifficulty": 35,
+        "isBoss": false
+      },
+      {
+        "id": 9,
+        "name": "剑圣护卫",
+        "enemies": [18, 13],
+        "minDifficulty": 50,
+        "isBoss": false
+      },
+      {
+        "id": 10,
+        "name": "冰火双元素",
+        "enemies": [19, 4],
+        "minDifficulty": 60,
+        "isBoss": false
+      },
+      {
+        "id": 11,
+        "name": "盗贼团伙",
+        "enemies": [20, 20, 20],
+        "minDifficulty": 45,
+        "isBoss": false
+      },
+      {
+        "id": 12,
+        "name": "Boss - 神圣守卫",
+        "enemies": [21],
+        "minDifficulty": 90,
+        "isBoss": true
+      }
+
+  ],
+    "card":[
+        {
+            "id":1,
+            "name":"Cgoto",
+            "chinese":"跳转",
+            "rarity":5,
+            "difficulty":1,
+            "description":"内部可以容纳一个标签，执行这一步操作时跳跃到标签处（在编辑界面，将这张卡牌加入后，先点击这张卡片，然后再点击状态栏里的标签即可使用）",
+            "max_level":9,
+            "energy":0
+        },
+        {
+            "id":2,
+            "name":"Aattack",
+            "chinese":"攻击",
+            "rarity":1,
+            "difficulty":1,
+            "description":"对随机敌人发动，造成 (6+等级*2) 点伤害",
+            "max_level":5,
+            "energy":1
+        },
+      {
+        "id": 3,
+        "name": "Aheavy",
+        "chinese": "重击",
+        "rarity": 3,
+        "difficulty": 1,
+        "description": "对随机敌人发动，造成 (14+等级*3) 点伤害",
+        "max_level": 5,
+        "energy": 2
+      },
+      {
+        "id": 4,
+        "name": "Sdefend",
+        "chinese": "举盾",
+        "rarity": 1,
+        "difficulty": 1,
+        "description": "进行防御，获得 (5+等级*2) 点格挡",
+        "max_level": 4,
+        "energy": 1
+      },
+      {
+        "id": 5,
+        "name": "Sprepare",
+        "chinese": "提前准备",
+        "rarity": 2,
+        "difficulty": 1,
+        "description": "下回合开始时，获得(2+等级)点能量",
+        "max_level": 3,
+        "energy": 0
+      },
+      {
+        "id": 6,
+        "name": "Ssleep",
+        "chinese": "休息",
+        "rarity": 1,
+        "difficulty": 1,
+        "description": "获得 (2+等级) 点能量",
+        "max_level": 4,
+        "energy": 1
+      },
+      {
+        "id": 7,
+        "name": "Swine",
+        "chinese": "酒",
+        "rarity": 3,
+        "difficulty": 2,
+        "description": "下一次攻击造成的伤害翻倍",
+        "max_level": 1,
+        "energy": 1
+      },
+      {
+        "id": 8,
+        "name": "Sice",
+        "chinese": "冰",
+        "rarity": 3,
+        "difficulty": 2,
+        "description": "失去两点生命，获得(3+等级)点法力",
+        "max_level": 1,
+        "energy": 0
+      },
+      {
+        "id": 9,
+        "name": "Aelbow",
+        "chinese": "肘击",
+        "rarity": 3,
+        "difficulty": 2,
+        "description": "对随机敌人发动，每有2点护甲，造成 1 点伤害",
+        "max_level": 0,
+        "energy": 1
+      },
+      {
+        "id": 10,
+        "name": "Asnowball",
+        "chinese": "雪球",
+        "rarity": 3,
+        "difficulty": 2,
+        "description": "对所有敌人造成造成 (4+等级) 伤害，若有敌人死亡，再次发动",
+        "max_level": 2,
+        "energy": 2
+      },
+      {
+          "id": 11,
+          "name": "Svine",
+          "chinese": "藤蔓缠绕",
+          "rarity": 3,
+          "difficulty": 2,
+          "description": "对随机敌人发动，敌人在这回合每花费1点能量，受到一次1点伤害",
+          "max_level": 1,
+          "energy": 1
+      },
+      {
+          "id": 12,
+          "name": "Alight",
+          "chinese": "耀眼光束",
+          "rarity": 3,
+          "difficulty": 2,
+          "description": "对随机敌人造成 (3+2*等级) 伤害,敌人下 (1+等级) 次攻击降低",
+          "max_level": 1,
+          "energy": 1
+      },
+      {
+          "id": 13,
+          "name": "Sdouble",
+          "chinese": "积蓄力量",
+          "rarity": 3,
+          "difficulty": 2,
+          "description": "下次攻击发动 2 次",
+          "max_level": 0,
+          "energy": 1
+      },
+      {
+        "id": 14,
+        "name": "Aflame",
+        "chinese": "火焰斩",
+        "rarity": 3,
+        "difficulty": 2,
+        "description": "对随机敌人造成 (5+3*等级) 点伤害，并施加 1 层灼烧，每回合开始失去 (等级+1) 点生命，持续 2 回合",
+        "max_level": 2,
+        "energy": 2
+      },
+      {
+        "id": 15,
+        "name": "Sshield",
+        "chinese": "护盾充能",
+        "rarity": 2,
+        "difficulty": 1,
+        "description": "获得 (4+2*等级) 点护甲，下回合开始时额外获得 1 点能量",
+        "max_level": 3,
+        "energy": 1
+      },
+      {
+        "id": 16,
+        "name": "Achain",
+        "chinese": "连锁闪电",
+        "rarity": 3,
+        "difficulty": 2,
+        "description": "对随机敌人造成 (3+等级) 点伤害，然后随机跳转到另一个敌人造成同样伤害，最多跳转 (2+等级) 次",
+        "max_level": 2,
+        "energy": 1
+      },
+      {
+        "id": 17,
+        "name": "Srevive",
+        "chinese": "重生",
+        "rarity": 4,
+        "difficulty": 2,
+        "description": "若当前生命低于 30%，则恢复 (10+5*等级) 生命，并移除所有负面状态，但本回合不能再行动（仅触发一次）",
+        "max_level": 1,
+        "energy": 0
+      },
+      {
+        "id": 18,
+        "name": "Ssteal",
+        "chinese": "能量窃取",
+        "rarity": 2,
+        "difficulty": 2,
+        "description": "从随机敌人处偷取 (2+等级) 点能量加给自己",
+        "max_level": 2,
+        "energy": 1
+      },
+      {
+          "id": 19,
+          "name": "Spoison",
+          "chinese": "毒药",
+          "rarity": 2,
+          "difficulty": 2,
+          "description": "对敌人施加 (4+等级) 层中毒",
+          "max_level": 2,
+          "energy": 1
+      },
+      {
+        "id": 20,
+        "name": "Sheal",
+        "chinese": "治愈术",
+        "rarity": 1,
+        "difficulty": 1,
+        "description": "恢复自身 (2+等级) 点生命值（不超过最大生命值）",
+        "max_level": 3,
+        "energy": 1
+      },
+      {
+        "id": 21,
+        "name": "Aflamestorm",
+        "chinese": "烈焰风暴",
+        "rarity": 3,
+        "difficulty": 2,
+        "description": "对所有敌人造成 (3+2*等级) 点伤害，并施加1层灼烧（每回合损失1点生命，持续2回合）",
+        "max_level": 2,
+        "energy": 2
+      },
+      {
+        "id": 22,
+        "name": "Ashieldbash",
+        "chinese": "护盾冲击",
+        "rarity": 3,
+        "difficulty": 2,
+        "description": "对随机敌人造成等同于自身当前护甲值的伤害（至少1点），随后清除自身所有护甲",
+        "max_level": 0,
+        "energy": 1
+      },
+      {
+        "id": 23,
+        "name": "Soverload",
+        "chinese": "能量透支",
+        "rarity": 2,
+        "difficulty": 2,
+        "description": "立即获得 (3+等级) 点能量，但本回合结束时失去所有剩余能量",
+        "max_level": 2,
+        "energy": 0
+      },
+      {
+        "id": 24,
+        "name": "Spurify",
+        "chinese": "净化",
+        "rarity": 2,
+        "difficulty": 1,
+        "description": "移除自身所有负面状态（中毒、灼烧、虚弱、藤蔓缠绕等），若移除至少一种，额外获得1点能量",
+        "max_level": 0,
+        "energy": 1
+      },
+      {
+        "id": 25,
+        "name": "Abolt",
+        "chinese": "闪电箭",
+        "rarity": 2,
+        "difficulty": 2,
+        "description": "对随机敌人造成 (4+等级×2) 点伤害，并减少其 1 点能量（至少为 0）",
+        "max_level": 3,
+        "energy": 1
+      },
+      {
+        "id": 26,
+        "name": "Sfury",
+        "chinese": "狂怒",
+        "rarity": 2,
+        "difficulty": 2,
+        "description": "获得 (2+等级) 点力量和 (1+等级) 点能量",
+        "max_level": 3,
+        "energy": 1
+      },
+      {
+        "id": 27,
+        "name": "Acleave",
+        "chinese": "横扫",
+        "rarity": 3,
+        "difficulty": 2,
+        "description": "对所有敌人造成 (2+等级) 点伤害",
+        "max_level": 5,
+        "energy": 2
+      },
+      {
+        "id": 28,
+        "name": "Scharge",
+        "chinese": "以攻为守",
+        "rarity": 2,
+        "difficulty": 2,
+        "description": "获得 (4+等级) 点护甲。本回合内每使用一张攻击牌，额外获得 1 点护甲（最多额外 (2+等级) 点）",
+        "max_level": 3,
+        "energy": 1
+      },
+      {
+        "id": 29,
+        "name": "Ablink",
+        "chinese": "闪烁突袭",
+        "rarity": 3,
+        "difficulty": 2,
+        "description": "对随机敌人造成 (8+3*等级) 点伤害，获得闪避状态（下次受伤减半）",
+        "max_level": 2,
+        "energy": 2
+      }
+    ],
+    "relic": [
+        {
+            "id": 4,
+            "description": "每回合行动次数 +2"
+        },
+        {
+            "id": 5,
+            "description": "每回合行动次数 -2"
+        },
+        {
+            "id": 8,
+            "description": "获得超过 1 点能量时额外再获得 1 点能量"
+        },
+        {
+            "id": 9,
+            "description": "获得超过 1 点护甲时额外再获得 1 点护甲"
+        },
+        {
+            "id": 10,
+            "description": "每回合结束保留一半护甲"
+        },
+        {
+            "id": 11,
+            "description": "每回合力量减少 2（不低于 0）"
+        },
+        {
+            "id": 12,
+            "description": "每当你受到攻击时，对攻击者造成 2 点伤害（不可格挡）"
+        },
+        {
+            "id": 13,
+            "description": "每回合开始时，额外获得 1 点能量"
+        },
+        {
+            "id": 14,
+            "description": "每次攻击造成伤害时，恢复伤害值 10% 的生命（向下取整）"
+        },
+        {
+            "id": 99,
+            "description": "有 50% 几率不会被选为攻击目标"
+        }
+    ]
+}

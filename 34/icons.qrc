@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>data/enemy.json</file>
+        <file>images/mystery.png</file>
+        <file>images/normal_battle.png</file>
+        <file>images/pro.png</file>
+        <file>images/shop.png</file>
+        <file>images/shop2.png</file>
+        <file>images/sleep.png</file>
+        <file>images/treasure.png</file>
+        <file>data/story.json</file>
+        <file>images/repair.png</file>
+        <file>images/relic_9.png</file>
+        <file>images/icon.png</file>
+        <file>images/start.png</file>
+        <file>images/logo.png</file>
+        <file>images/relic_10.png</file>
+        <file>images/relic_12.png</file>
+        <file>images/relic_13.png</file>
+        <file>images/relic_14.png</file>
+    </qresource>
+</RCC>

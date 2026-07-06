@@ -1,0 +1,354 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "text": "你站在十字路口。\n向左是黑暗森林，向右是阳光大道。",
+      "choices": [
+        {
+          "text": "向左走",
+          "target": 1,
+          "effects": []
+        },
+        {
+          "text": "向右走",
+          "target": 2,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "text": "你遇到了一些精灵。\n它们要求你进行交换。",
+      "choices": [
+        {
+          "text": "失去3点生命，获得30点金币",
+          "target": -1,
+          "effects": [
+            { "type": "addHealth", "value": -3 },
+            { "type": "addMoney", "value": 30 }
+          ]
+        },
+        {
+          "text": "直接离开",
+          "target": -1,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "你遇到了一伙强盗",
+      "choices": [
+        {
+          "text": "失去15枚金币",
+          "target": -1,
+          "effects": [
+            { "type": "addMoney", "value": -15 }
+          ]
+        },
+        {
+          "text": "进入战斗",
+          "target": -1,
+          "effects": [
+            { "type": "startBattle", "value": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "你发现了一口泉水",
+      "choices": [
+        {
+          "text": "回复20点生命",
+          "target": 4,
+          "effects": [
+            { "type": "addHealth", "value": 20 }
+          ]
+        },
+        {
+          "text": "直接离开",
+          "target": -1,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "你在井底发现了一瓶可疑的魔药。",
+      "choices": [
+        {
+          "text": "随机获得或失去5点生命",
+          "target": -1,
+          "effects": [
+            { "type": "randomHealth", "value": 5 }
+          ]
+        },
+        {
+          "text": "直接离开",
+          "target": -1,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "你遇到了一位吟游诗人。/n他要讲述一些英雄史诗",
+      "choices": [
+        {
+          "text": "随机获得一个配件",
+          "target": -1,
+          "effects": [
+            { "type": "addRelic", "value": -1 }
+          ]
+        },
+        {
+          "text": "恢复20点生命",
+          "target": -1,
+          "effects": [
+            { "type": "addHealth", "value": 20 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "你遇到了一位女巫",
+      "choices": [
+        {
+          "text": "失去十点生命上限，随机获得一件配件",
+          "target": -1,
+          "effects": [
+            { "type": "addMaxHealth", "value": -10 },
+            { "type": "addRelic", "value": 1 }
+          ]
+        },
+        {
+          "text": "直接离开",
+          "target": -1,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "你走进了怪物的巢穴，/n它正在无忧的安眠",
+      "choices": [
+        {
+          "text": "进入战斗，胜利后获得一件配件",
+          "target": -1,
+          "effects": [
+            { "type": "startBattle", "value": 1 },
+            { "type": "addRelic", "value": 1 }
+          ]
+        },
+        {
+          "text": "偷偷溜走",
+          "target": 8,
+          "effects": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "你在逃走时落入陷阱落入了陷阱",
+      "choices": [
+        {
+          "text": "进入战斗",
+          "target": -1,
+          "effects": [
+            { "type": "startBattle", "value": 2 }
+          ]
+        },
+        {
+          "text": "强行逃脱，失去10点生命",
+          "target": 9,
+          "effects": [
+            { "type": "addHealth", "value": -10 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "你被怪物包围了，/n选一个方向突围",
+      "choices": [
+        {
+          "text": "向前，与两名敌人交战",
+          "target": 1,
+          "effects": [
+            { "type": "startBattle", "value": 3 }
+          ]
+        },
+        {
+          "text": "向后，与一名精英敌人交战",
+          "target": 2,
+          "effects": [
+            { "type": "startBattle", "value": 4 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "你在陷阱里发现了一个配件",
+      "choices": [
+        {
+          "text": "获得配件，失去4点生命",
+          "target": -1,
+          "effects": [
+            { "type": "addRelic", "value": -1 },
+            { "type": "addHealth", "value": -4 }
+          ]
+        },
+        {
+          "text": "直接离开",
+          "target": 11,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "你遇到了一个可疑的商贩",
+      "choices": [
+        {
+          "text": "失去100金币，获得一个配件",
+          "target": -1,
+          "effects": [
+            { "type": "addMoney", "value": -100 },
+            { "type": "addRelic", "value": -1 }
+          ]
+        },
+        {
+          "text": "进入战斗，胜利后获得一个配件",
+          "target": -1,
+          "effects": [
+            { "type": "startBattle", "value": 5 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "你遇到了一个鬼鬼祟祟的女巫",
+      "choices": [
+        {
+          "text": "失去3点生命上限，获得一点法力上限",
+          "target": -1,
+          "effects": [
+            { "type": "addMaxHealth", "value": -3 },
+            { "type": "addMaxEnergy", "value": 1 }
+          ]
+        },
+        {
+          "text": "直接离开",
+          "target": 13,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "女巫提出了新的交易",
+      "choices": [
+        {
+          "text": "随机变化两个语句",
+          "target": -1,
+          "effects": [
+            { "type": "randomizeCards", "value": 2 }
+          ]
+        },
+        {
+          "text": "直接离开",
+          "target": -1,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "你被卡在了故障的传送门里，/n是否进行维修",
+      "choices": [
+        {
+          "text": "维修，失去30枚金币",
+          "target": 15,
+          "effects": [
+            { "type": "addMoney", "value": -30 }
+          ]
+        },
+        {
+          "text": "不维修，失去5点生命",
+          "target": -1,
+          "effects": [
+            { "type": "addHealth", "value": -5 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "你修好了传送门",
+      "choices": [
+        {
+          "text": "跳过下一个节点",
+          "target": -1,
+          "effects": []
+        },
+        {
+          "text": "直接离开",
+          "target": -1,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "你遇见了一个宝箱",
+      "choices": [
+        {
+          "text": "进行探索",
+          "target": 17,
+          "effects": []
+        },
+        {
+          "text": "直接离开",
+          "target": -1,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "你找到了20枚金币",
+      "choices": [
+        {
+          "text": "接着探索",
+          "target": 18,
+          "effects": []
+        },
+        {
+          "text": "获得20枚金币，离开",
+          "target": -1,
+          "effects": [
+            { "type": "addMoney", "value": 20 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "原来是宝箱怪！",
+      "choices": [
+        {
+          "text": "进入战斗",
+          "target": -1,
+          "effects": [
+            { "type": "startBattle", "value": 6 }
+          ]
+        }
+      ]
+    }
+  ]
+}
